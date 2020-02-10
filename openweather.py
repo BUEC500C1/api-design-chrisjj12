@@ -23,7 +23,5 @@ def airport_weather(airportname):
                 print("Humidity:", data['main']['humidity'])
                 
 
-airportname = input("Please enter the name of an airport: ")
-airport_weather(airportname)
- 
+
 
