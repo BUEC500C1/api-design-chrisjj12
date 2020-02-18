@@ -1,6 +1,6 @@
 import openweather
 
-def testing():
+def test_api():
     openweather.airport_weather("Total Rf Heliport")
     openweather.airport_weather("Washington Dulles International Airport")
     openweather.airport_weather("Idaho Falls Regional Airport")
