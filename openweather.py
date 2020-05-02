@@ -22,5 +22,5 @@ def airport_weather(airportname):
                 print("Clouds: ", data['clouds']['all'])
                 print("Long:", data['coord']['lon'], "Lat:",data['coord']['lat'])
                 print("Humidity:", data['main']['humidity'])
-            else
-                print("Invalid airport, please enter a valid airport!")
+            #else
+                #print("Invalid airport, please enter a valid airport!")
