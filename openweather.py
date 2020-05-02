@@ -4,7 +4,7 @@ import csv
 api_key = 'd03a56cf2821428e5ad66c8317e604d1'
                 
 def airport_weather(airportname):
-    
+    /Users/Chris/Documents/Senior/EC500/api-design-chrisjj12/openweather.py
     with open ('airports.csv') as airports:
         listofairports = csv.DictReader(airports)
 
@@ -22,5 +22,4 @@ def airport_weather(airportname):
                 print("Clouds: ", data['clouds']['all'])
                 print("Long:", data['coord']['lon'], "Lat:",data['coord']['lat'])
                 print("Humidity:", data['main']['humidity'])
-            #else
-                #print("Invalid airport, please enter a valid airport!")
+
