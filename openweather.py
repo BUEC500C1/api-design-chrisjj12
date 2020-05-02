@@ -4,9 +4,10 @@ import csv
 api_key = 'd03a56cf2821428e5ad66c8317e604d1'
                 
 def airport_weather(airportname):
+    
     with open ('airports.csv') as airports:
         listofairports = csv.DictReader(airports)
-        #listofairports = csv.DictReader('airports.csv')
+
         for row in listofairports:
             if row['name'] == airportname:
                 long = row['longitude_deg']
@@ -21,3 +22,5 @@ def airport_weather(airportname):
                 print("Clouds: ", data['clouds']['all'])
                 print("Long:", data['coord']['lon'], "Lat:",data['coord']['lat'])
                 print("Humidity:", data['main']['humidity'])
+            else
+                print("Invalid airport, please enter a valid airport!")
