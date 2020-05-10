@@ -5,7 +5,6 @@ api_key = 'd03a56cf2821428e5ad66c8317e604d1'
                 
 def airport_weather(airportname):
     
-    if os.path.isfile(/api-design-chrisjj12/airports.csv)
         with open ('airports.csv') as airports:
             try:
                 listofairports = csv.DictReader(airports)
