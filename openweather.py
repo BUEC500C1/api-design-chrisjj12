@@ -16,12 +16,17 @@ def airport_weather(airportname):
                         url = "http://api.openweathermap.org/data/2.5/weather?" + "lat=" + lat + "&lon=" + long + "&appid=" + api_key
                         data = requests.get(url).json()
 
-                        print("Weather: ", data['weather'][0]['description'])
-                        print("Temperature: ", data['main']['temp'])
-                        print("Wind speed: ", data['wind']['speed'])
-                        print("Humidity: ", data['main']['humidity'])
-                        print("Clouds: ", data['clouds']['all'])
-                        print("Long:", data['coord']['lon'], "Lat:",data['coord']['lat'])
-                        print("Humidity:", data['main']['humidity'])
+                        weather_stats= []
+
+                        weather_stats.append("Weather: " + data['weather'][0]['description'])
+                        weather_stats.append("Temperature: " + data['main']['temp'])
+                        weather_stats.append("Wind speed: " +  data['wind']['speed'])
+                        weather_stats.append("Humidity: " +  data['main']['humidity'])
+                        weather_stats.append("Clouds: " +  data['clouds']['all'])
+                        weather_stats.append("Long: " +  data['coord']['lon'] +  "Lat: " + data['coord']['lat'])
+                        weather_stats.append("Humidity: " +  data['main']['humidity'])
+
+                        return weather_stats
             except:
                 print("Error")
+                return []
