@@ -2,7 +2,7 @@ import openweather
 
 def test_api():
     assert len(openweather.airport_weather("Total Rf Heliport")) != 0
-    assert len(openweather.airport_weather("Washington Dulles International Airport") != 0
+    assert len(openweather.airport_weather("Washington Dulles International Airport")) != 0
     assert len(openweather.airport_weather("Idaho Falls Regional Airport")) != 0
     assert len(openweather.airport_weather("Jamestown Regional Airport")) != 0
     assert len(openweather.airport_weather("Rush County Airport")) != 0
